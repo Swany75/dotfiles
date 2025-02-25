@@ -16,9 +16,11 @@ Per crear el meu propi entorn d'escritori m'he basat principalment amb els segü
 
 ### Guies que he seguit principalment
 
-[s4vitar: ASÍ es el ENTORNO de un HACKER](https://www.youtube.com/watch?v=fshLf6u8B-w&list=PLAmFGtb2oqjVBq-umQ1MRF4mqYvUYy67g)
-
+![image](https://github.com/user-attachments/assets/73546f33-4401-4d69-9658-5dc0cfbaf784)
 [Antonio Sarosi: Creando tu propio entorno de escritorio en Arch](https://mastermind.ac/curso/creando-tu-propio-entorno-de-escritorio-en-arch)
+
+![image](https://github.com/user-attachments/assets/a2524ed0-b53f-4f78-81b1-1568462c770e)
+[s4vitar: ASÍ es el ENTORNO de un HACKER](https://www.youtube.com/watch?v=fshLf6u8B-w&list=PLAmFGtb2oqjVBq-umQ1MRF4mqYvUYy67g)
 
 ### Repositoris
 
