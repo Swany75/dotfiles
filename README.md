@@ -30,6 +30,7 @@ Per crear el meu propi entorn d'escritori m'he basat principalment amb els segü
 - https://github.com/Alpharivs/dotfiles
 - https://github.com/antoniosarosi/dotfiles
 - https://github.com/davatorium/rofi-themes
+- https://gitlab.com/dwt1/dotfiles/-/blob/master/.config/qtile/config.py?ref_type=heads
 
 ### Videos
 
