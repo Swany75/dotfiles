@@ -20,7 +20,16 @@ Per crear el meu propi entorn d'escritori m'he basat principalment amb els segü
 
 [Antonio Sarosi: Creando tu propio entorno de escritorio en Arch](https://mastermind.ac/curso/creando-tu-propio-entorno-de-escritorio-en-arch)
 
-### Altres
+### Repositoris
+
+- https://github.com/jorgeloopzz/dotfiles
+- https://github.com/gh0stzk/dotfiles
+- https://github.com/archcraft-os/archcraft
+- https://github.com/Alpharivs/dotfiles
+- https://github.com/antoniosarosi/dotfiles
+- https://github.com/davatorium/rofi-themes
+
+### Videos
 
 - [Cinnamon Desktop Install on BlackArch Linux](https://www.youtube.com/watch?v=mwHzOghuvyM&t=3s)
 - [Install Cosmic Desktop on Arch Linux - Epoch 1 Impression (2024)](https://www.youtube.com/watch?v=UzgA3Aidrd0)
@@ -30,11 +39,3 @@ Per crear el meu propi entorn d'escritori m'he basat principalment amb els segü
 - [CONVIERTE TU LINUX EN UN ENTORNO PROFESIONAL DE TRABAJO (2021)](https://www.youtube.com/watch?v=mHLwfI1nHHY)
 - [Configurar ENTORNO PROFESIONAL de HACKING y CIBERSEGURIDAD con Bspwm](https://www.youtube.com/watch?v=7o7JqeToFzg)
 - [Como instalar y configuar Polybar](https://www.youtube.com/watch?v=mRY5qisOBhk)
-
-### Repositoris
-
-- https://github.com/jorgeloopzz/dotfiles
-- https://github.com/gh0stzk/dotfiles
-- https://github.com/archcraft-os/archcraft
-- https://github.com/Alpharivs/dotfiles
-- https://github.com/antoniosarosi/dotfiles
