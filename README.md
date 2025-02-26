@@ -6,10 +6,6 @@ My Arch Linux Dotfiles &amp; Config
 ![alt text](image.png)
 
 
-## Cinnamon<br>
-
-- Proximament
-
 ## Repositoris i Recursos que he emprat
 
 Per crear el meu propi entorn d'escritori m'he basat principalment amb els següents dos cursos. El d'en s4vitar sobretot per la configuració de la terminal y la polybar i n'Antonio Sarosi per l'entorn d'escritori i el sistema gestor de finestres. A més he vist més videos que us deixaré abaix. També m'he inspirat amb altres entorns d'escriptori com Arch Craft OS i Awesome.
