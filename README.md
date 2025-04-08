@@ -5,18 +5,26 @@ My Arch Linux Dotfiles &amp; Config
 
 ![alt text](image.png)
 
+## Bspwm<br>
+
+Proximament...
+
+## Cinnamon<br>
+
+Proximament...
 
 ## Repositoris i Recursos que he emprat
 
-Per crear el meu propi entorn d'escritori m'he basat principalment amb els següents dos cursos. El d'en s4vitar sobretot per la configuració de la terminal y la polybar i n'Antonio Sarosi per l'entorn d'escritori i el sistema gestor de finestres. A més he vist més videos que us deixaré abaix. També m'he inspirat amb altres entorns d'escriptori com Arch Craft OS i Awesome.
+Per crear el meu propi entorn d'escritori m'he basat principalment amb els següents dos cursos:
+- S4vitar per Bspwm i la terminal.
+- Antonio Sarosi per Qtile i les configuracions generals i especifiques.
 
-### Guies que he seguit principalment
+A més he vist més videos i repositoris que us deixaré abaix. També m'he inspirat amb altres entorns d'escriptori com Arch Craft OS i Awesome.
 
-![image](https://github.com/user-attachments/assets/73546f33-4401-4d69-9658-5dc0cfbaf784)
+### Cursos que he seguit principalment
+
 [Antonio Sarosi: Creando tu propio entorno de escritorio en Arch](https://mastermind.ac/curso/creando-tu-propio-entorno-de-escritorio-en-arch)
-
-![image](https://github.com/user-attachments/assets/a2524ed0-b53f-4f78-81b1-1568462c770e)
-[s4vitar: ASÍ es el ENTORNO de un HACKER](https://www.youtube.com/watch?v=fshLf6u8B-w&list=PLAmFGtb2oqjVBq-umQ1MRF4mqYvUYy67g)
+[S4vitar: Personalización de entorno en Linux](https://hack4u.io/cursos/personalizacion-de-entorno-en-linux/)
 
 ### Repositoris
 
@@ -30,6 +38,7 @@ Per crear el meu propi entorn d'escritori m'he basat principalment amb els segü
 
 ### Videos
 
+- [ASÍ es el ENTORNO de un HACKER](https://www.youtube.com/watch?v=fshLf6u8B-w&list=PLAmFGtb2oqjVBq-umQ1MRF4mqYvUYy67g)
 - [Cinnamon Desktop Install on BlackArch Linux](https://www.youtube.com/watch?v=mwHzOghuvyM&t=3s)
 - [Install Cosmic Desktop on Arch Linux - Epoch 1 Impression (2024)](https://www.youtube.com/watch?v=UzgA3Aidrd0)
 - [¿Es realmente DIFÍCIL Arch Linux?](https://www.youtube.com/watch?v=bLXx0pkONec)
@@ -38,3 +47,4 @@ Per crear el meu propi entorn d'escritori m'he basat principalment amb els segü
 - [CONVIERTE TU LINUX EN UN ENTORNO PROFESIONAL DE TRABAJO (2021)](https://www.youtube.com/watch?v=mHLwfI1nHHY)
 - [Configurar ENTORNO PROFESIONAL de HACKING y CIBERSEGURIDAD con Bspwm](https://www.youtube.com/watch?v=7o7JqeToFzg)
 - [Como instalar y configuar Polybar](https://www.youtube.com/watch?v=mRY5qisOBhk)
+- [How To Make Cinnamon Beautiful ...](https://www.youtube.com/watch?v=Q_Uoe5H4ORs)
