@@ -23,8 +23,8 @@ A més he vist més videos i repositoris que us deixaré abaix. També m'he insp
 
 ### Cursos que he seguit principalment
 
-[Antonio Sarosi: Creando tu propio entorno de escritorio en Arch](https://mastermind.ac/curso/creando-tu-propio-entorno-de-escritorio-en-arch)
-[S4vitar: Personalización de entorno en Linux](https://hack4u.io/cursos/personalizacion-de-entorno-en-linux/)
+- [Antonio Sarosi: Creando tu propio entorno de escritorio en Arch](https://mastermind.ac/curso/creando-tu-propio-entorno-de-escritorio-en-arch)
+- [S4vitar: Personalización de entorno en Linux](https://hack4u.io/cursos/personalizacion-de-entorno-en-linux/)
 
 ### Repositoris
 
