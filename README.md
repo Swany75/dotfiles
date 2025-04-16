@@ -7,7 +7,7 @@ My Arch Linux Dotfiles &amp; Config
 
 ## Bspwm<br>
 
-Proximament...
+![image](https://github.com/user-attachments/assets/fff0d40c-fd30-4984-a966-3d3641d238eb)
 
 ## Cinnamon<br>
 
