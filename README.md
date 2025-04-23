@@ -13,6 +13,10 @@ My Arch Linux Dotfiles &amp; Config
 
 Proximament...
 
+## Cosmic
+
+Proximament...
+
 ## Repositoris i Recursos que he emprat
 
 Per crear el meu propi entorn d'escritori m'he basat principalment amb els següents dos cursos:
