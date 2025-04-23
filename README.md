@@ -39,6 +39,14 @@ A més he vist més videos i repositoris que us deixaré abaix. També m'he insp
 - https://github.com/antoniosarosi/dotfiles
 - https://github.com/davatorium/rofi-themes
 - https://gitlab.com/dwt1/dotfiles/-/blob/master/.config/qtile/config.py?ref_type=heads
+- 
+- 
+-
+-
+-
+-
+-
+-
 
 ### Videos
 
@@ -52,3 +60,14 @@ A més he vist més videos i repositoris que us deixaré abaix. També m'he insp
 - [Configurar ENTORNO PROFESIONAL de HACKING y CIBERSEGURIDAD con Bspwm](https://www.youtube.com/watch?v=7o7JqeToFzg)
 - [Como instalar y configuar Polybar](https://www.youtube.com/watch?v=mRY5qisOBhk)
 - [How To Make Cinnamon Beautiful ...](https://www.youtube.com/watch?v=Q_Uoe5H4ORs)
+- [Cosmic Desktop on Pop OS - A Review of the Latest Alpha 6](https://www.youtube.com/watch?v=w6-99_Xo4qM)
+- [Cosmic Arch: Installing Archlinux with the cosmic desktop environment](https://www.youtube.com/watch?v=8Zo-rFKUue4)
+- [⭐ How to Customize COSMIC Desktop](https://www.youtube.com/watch?v=8Zo-rFKUue4)
+- [Trying Out The Cosmic Desktop Environment ...](https://www.youtube.com/watch?v=2SSak5HoowU)
+-
+-
+-
+-
+-
+- 
+- 
