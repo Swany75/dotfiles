@@ -1,5 +1,5 @@
 # Dotfiles<br>
-My Arch Linux Dotfiles &amp; Config
+My Linux Dotfiles &amp; Config
 
 ## Qtile<br>
 
