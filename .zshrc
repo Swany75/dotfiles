@@ -52,22 +52,9 @@ source ~/.local/share/zsh/powerlevel10k/powerlevel10k.zsh-theme
 
 PATH=/root/.local/bin:/snap/bin:/usr/sandbox/:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/share/games:/usr/local/sbin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/sbin/
 
-### Manual aliases ##################################################################################################################
+# Load Aliases
+[ -f ~/.aliases.zsh ] && source ~/.aliases.zsh
 
-# LS
-alias ll='lsd -lh --group-dirs=first'
-alias la='lsd -a --group-dirs=first'
-alias l='lsd --group-dirs=first'
-alias lla='lsd -lha --group-dirs=first'
-alias ls='lsd --group-dirs=first'
-
-# CAT
-alias cat='bat --style=plain --paging=never'
-
-### Videogames Aliases ###############################################################################################################
-
-alias escambri='python3 /home/swany/Games/Escambri/main.py'
-alias tictactoe='python3 /home/swany/Games/TicTacToe/main.py'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
@@ -88,12 +75,15 @@ bindkey "^[OF" end-of-line
 
 ### Functions #######################################################################################################################
 
-ZSH_FUNC_DIR="/home/swany/.config/terminal/zsh/"
+ZSH_FUNC_DIR="/home/swany/.functions"
 
 for f in "$ZSH_FUNC_DIR"/*.zsh; do
   source "$f"
 done
 
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
+
+ZSH_AUTOSUGGEST_STRATEGY=() 
 
 # Activa l'entorn Python personal
 if [[ -d "/home/swany/myenv" ]]; then
@@ -106,3 +96,8 @@ source /home/swany/Repos/powerlevel10k/powerlevel10k.zsh-theme
 
 # Created by `pipx` on 2025-04-23 09:04:21
 export PATH="$PATH:/home/swany/.local/bin"
+export PATH=$PATH:~/.npm-global/bin
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

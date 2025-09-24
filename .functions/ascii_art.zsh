@@ -1,5 +1,30 @@
 #!/bin/zsh
 
+function asciiart() {
+    local file="$1"
+    local width="${2:-80}"
+
+    if [[ -z "$file" ]]; then
+        _show_message "Usage: asciiart <image-file> [width]" "error"
+        return 1
+    fi
+
+    if [[ ! -f "$file" ]]; then
+        _show_message "File not found: $file" "error"
+        return 1
+    fi
+
+    if command -v jp2a &>/dev/null; then
+        jp2a --width="$width" --colors "$file"
+        return $?
+    fi
+
+    _show_message "No ASCII image tool found. Install jp2a" "error"
+    return 1
+}
+
+### PRINT ASCII ###########################################################
+
 function ascii_demon() {
   echo -e "${colors[red]}
             .                                                      .
