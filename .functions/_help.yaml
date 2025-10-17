@@ -1,12 +1,20 @@
 _core.zsh:
   info: "Internal utility functions used to enhance other modules."
   functions:
-    ctrl_c:
+    _ctrl_c:
       description: "Handles Ctrl+C and exits cleanly"
-    show_message:
+    _show_message:
       description: "Displays colored status/info messages with symbols"
-    calcSpaces:
+    _calcSpaces:
       description: "Calculates spaces for text alignment"
+
+_help.zsh:
+  info: "Help system for viewing function documentation"
+  functions:
+    help:
+      description: "Display help for all modules and functions"
+    _show_module:
+      description: "Internal function to display module information"
 
 ascii_art.zsh:
   functions:
@@ -64,10 +72,18 @@ notes.zsh:
       description: "Clear all notes with confirmation"
 
 performance.zsh:
-  info: "In the future we are going to add more functions like this"
+  info: "System performance monitoring functions"
   functions:
     batteryStatus:
       description: "Show ASCII battery status with percentage and charging state"
+    cpuStatus:
+      description: "Show CPU usage and temperature"
+    ramStatus:
+      description: "Show RAM usage statistics"
+    gpuStatus:
+      description: "Show GPU usage and temperature"
+    status:
+      description: "Show comprehensive system status (CPU, RAM, GPU, Battery)"
 
 sys_utils.zsh:
   functions:

@@ -73,6 +73,7 @@ def get_keys():
     ]
     
     # Add VT switching keys for Wayland
+    """
     for vt in range(1, 9):
         keys.append(
             Key(
@@ -82,5 +83,5 @@ def get_keys():
                 desc=f"Switch to VT{vt}",
             )
         )
-    
+    """
     return keys

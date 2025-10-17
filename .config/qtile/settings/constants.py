@@ -5,7 +5,19 @@ import socket
 import psutil
 
 # System information
-HOSTNAME = socket.gethostname()
+def get_hostname():
+    name_file = os.path.join(os.path.dirname(__file__), 'name.txt')
+    if os.path.exists(name_file):
+        try:
+            with open(name_file, 'r') as f:
+                first_line = f.readline().strip()
+                if first_line:
+                    return first_line
+        except Exception:
+            pass
+    return socket.gethostname()
+
+HOSTNAME = get_hostname()
 
 def get_ip():
     for iface, addrs in psutil.net_if_addrs().items():
