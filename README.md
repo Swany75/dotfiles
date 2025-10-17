@@ -9,19 +9,10 @@ A comprehensive collection of Linux configuration files optimized for cybersecur
 
 ![Bspwm Screenshot](https://github.com/user-attachments/assets/fff0d40c-fd30-4984-a966-3d3641d238eb)
 
-**Key Features:**
-- Custom Polybar configuration with security-focused modules
-- Advanced window management rules
-- Seamless integration with Rofi and custom scripts
-
 ### 🐍 Qtile 
 **Python-based Tiling Window Manager** - A modular, Python-powered tiling setup
 
-**Key Features:**
-- Modular Python configuration with organized structure
-- Custom status bar with system monitoring widgets
-- Battery, disk usage, and network information displays
-- Smooth keyboard-driven workflow
+<img width="1920" height="1080" alt="qtile_desktop" src="https://github.com/user-attachments/assets/0bbdfb1a-f1e8-44da-b945-e7b6d2240f80" />
 
 ### 🍃 Cinnamon
 *Coming Soon - Traditional desktop environment configuration*
