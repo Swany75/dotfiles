@@ -4,7 +4,7 @@ A comprehensive collection of Linux configuration files optimized for cybersecur
 
 ## 🚀 Featured Desktop Environments
 
-### 🏗️ Bspwm (Primary Setup)
+### 👾 Bspwm
 **Binary Space Partitioning Window Manager** - A fully configured tiling window manager setup
 
 ![Bspwm Screenshot](https://github.com/user-attachments/assets/fff0d40c-fd30-4984-a966-3d3641d238eb)
