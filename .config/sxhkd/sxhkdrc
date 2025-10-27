@@ -27,7 +27,7 @@ super + shift + s
     scrot ~/Pictures/Screenshots/%Y-%m-%d_%H-%M-%S.png
 
 # Bloquejar la pantalla
-super + l
+super + control + l
     /usr/bin/i3lock-fancy
 
 
@@ -35,9 +35,14 @@ super + l
 # bspwm hotkeys
 #
 
-# quit/restart bspwm
-super + ctrl + {q,r}
-    bspc {quit,wm -r}
+# Power Menu
+super + ctrl + q
+    /home/swany/.config/rofi/power_menu.sh
+
+# Reload BSPWM
+
+super + ctrl + r
+    bspc wm -r
 
 # close and kill
 super + {_,ctrl + }w
