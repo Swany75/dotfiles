@@ -53,6 +53,8 @@ net_utils.zsh:
       description: "Rename network interface"
     connections:
       description: "Show active network connections"
+    downdetector:
+      description: "Check if a service is reachable"
 
 polybar.zsh:
   info: "These functions only work on the BSPWM + Polybar Desktop Environment"
@@ -82,8 +84,10 @@ performance.zsh:
       description: "Show RAM usage statistics"
     gpuStatus:
       description: "Show GPU usage and temperature"
+    diskStatus:
+      description: "Show disk usage statistics with color-coded percentages"
     status:
-      description: "Show comprehensive system status (CPU, RAM, GPU, Battery)"
+      description: "Show comprehensive system status (CPU, RAM, GPU, Battery, Disk)"
 
 sys_utils.zsh:
   functions:
@@ -93,6 +97,8 @@ sys_utils.zsh:
       description: "Man pages with syntax highlighting via bat"
     extract:
       description: "Extract various archive types"
+    compress:
+      description: "Compress files or folders (supports zip, tar, rar, 7z, gzip)"
     backup:
       description: "Backup files or directories with timestamp"
     cput:

@@ -1,0 +1,46 @@
+- `net_reset`: Reset network interfaces and flush DNS cache.
+- `hash_cracker`: Attempt to crack weak hashes for educational purposes.
+- `net_monitor`: Monitor network traffic on a specific interface.
+- `vuln_checker`: Scan system for common vulnerabilities.
+- `exploit_tester`: Simulate exploits in a controlled environment.
+- `genpass`: Generate secure random passwords.
+- `wifi_probe`: List nearby Wi-Fi networks.
+- `wifi_probe_sniff`: Sniff nearby Wi-Fi probe requests.
+- `top_procs`: Show top CPU-consuming processes.
+- `procmon`: Monitor processes with filtering.
+- `disk_usage`: Visual tree map of disk usage.
+- `disk_map`: Visualize disk usage per mount.
+- `disk_watch`: Monitor disk usage with alerts.
+- `net_speed`: Monitor real-time network transfer.
+- `net_traffic`: Monitor network traffic per interface.
+- `proc_top`: Monitor top processes.
+- `dup_finder`: Find duplicate files.
+- `dupescan`: Scan directory for duplicates.
+- `extract`: Extract archives intelligently.
+- `extract_all`: Extract any archive format.
+- `img_convert`: Convert image formats.
+- `videoconvert`: Convert video formats.
+- `vid2gif`: Convert video to GIF.
+- `vid2mp3`: Extract audio from video.
+- `csview`: View CSV as table.
+- `big_files`: List largest files.
+- `timer`: Countdown timer.
+- `url_shortener`: Shorten URLs.
+- `dockerclean`: Remove unused Docker resources.
+- `focus_mode`: Block distractions for deep work.
+- `jsonformat`: Pretty-print JSON try with yaml yml.
+- `jsonpp`: Pretty-print JSON.
+- `livemd`: Live Markdown preview.
+- `cheat`: Display cheat sheets.
+- `qrgen`: Generate QR codes.
+- `weather`: Show current weather.
+- `encfile`: Encrypt file.
+- `decfile`: Decrypt file.
+- `portfree`: Kill process occupying port.
+- `epoch`: Show current Unix timestamp.
+- `random`: Generate random number/string/UUID.
+- `urlencode`: Encode URL.
+- `urldecode`: Decode URL.
+- `killport`: Kill process by port.
+
+# Find api keys recursively on a repository

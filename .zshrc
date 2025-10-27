@@ -53,10 +53,7 @@ source ~/.local/share/zsh/powerlevel10k/powerlevel10k.zsh-theme
 PATH=/root/.local/bin:/snap/bin:/usr/sandbox/:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/share/games:/usr/local/sbin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/sbin/
 
 # Load Aliases
-[ -f ~/.aliases.zsh ] && source ~/.aliases.zsh
-
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -f /home/swany/.aliases.zsh ] && source /home/swany/.aliases.zsh
 
 # Inicia l'agent SSH i carrega la clau
 eval "$(ssh-agent -s)" > /dev/null

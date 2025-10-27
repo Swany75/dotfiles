@@ -50,5 +50,3 @@ dX.    9Xb      .dXb    __                         __    dXb.     dXP     .Xb
                                \`             '
  ${colors[reset]}"
 }
-
-
