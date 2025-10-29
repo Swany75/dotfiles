@@ -55,6 +55,8 @@ net_utils.zsh:
       description: "Show active network connections"
     downdetector:
       description: "Check if a service is reachable"
+    eping:
+      description: "Enhanced ping with OS detection and colorized output"
 
 polybar.zsh:
   info: "These functions only work on the BSPWM + Polybar Desktop Environment"

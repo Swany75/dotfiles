@@ -1,11 +1,4 @@
-#!/bin/zsh
-
-function remember() {
-    local timestamp=$(date '+%d/%m/%Y %H:%M:%S')
-    local message="$*"
-    echo "$timestamp|$message" >> ~/.notes
-    _show_message "Note saved:" plus "$message"
-}
+#!/usr/bin/zsh
 
 function notes() {
     if [[ ! -s ~/.notes ]]; then
@@ -21,23 +14,4 @@ function notes() {
         done
         echo
     fi
-}
-
-function clear_notes() {
-    if [[ ! -f ~/.notes ]] || [[ ! -s ~/.notes ]]; then
-        _show_message "There is no notes file to clear." error
-        return
-    fi
-
-    echo -ne "\n${colors[yellow]}Are you sure you want to delete all notes? (y/N) ${colors[reset]}\n" && read -r answer
-
-    case "$answer" in
-        [yY])
-            echo "" > ~/.notes
-            _show_message "All notes have been deleted." minus
-            ;;
-        *)
-            _show_message "Action cancelled." info
-            ;;
-    esac
 }

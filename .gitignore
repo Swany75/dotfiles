@@ -6,4 +6,5 @@ __pycache__/
 .Python
 
 # Functions
-functions/random_stuff.zsh
+functions/random_stuff/*
+functions/functions.md
