@@ -55,9 +55,8 @@ PATH=/root/.local/bin:/snap/bin:/usr/sandbox/:/usr/local/bin:/usr/bin:/bin:/usr/
 # Load Aliases
 [ -f /home/swany/.aliases.zsh ] && source /home/swany/.aliases.zsh
 
-# Inicia l'agent SSH i carrega la clau
-eval "$(ssh-agent -s)" > /dev/null
-ssh-add ~/.ssh/git &> /dev/null
+# Inicia l'agent SSH i carrega la clau (async)
+{ eval "$(ssh-agent -s)" > /dev/null && ssh-add ~/.ssh/git &> /dev/null } &!
 
 # Plugins
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -74,9 +73,19 @@ bindkey "^[OF" end-of-line
 
 ZSH_FUNC_DIR="/home/swany/.functions"
 
-for f in "$ZSH_FUNC_DIR"/*.zsh; do
-  source "$f"
+# Load _core.zsh immediately (required by other functions)
+source "$ZSH_FUNC_DIR/_core.zsh"
+
+# Lazy-load all other functions - they load on first use
+for func_file in "$ZSH_FUNC_DIR"/**/*.zsh(N); do
+  [[ "$func_file" == *"_core.zsh" ]] && continue
+  
+  # Extract function names and create lazy loaders
+  for func_name in $(grep -oP '^(?:function )?\K[a-zA-Z_][a-zA-Z0-9_]*(?=\s*\(\))' "$func_file" 2>/dev/null); do
+    eval "$func_name() { unfunction $func_name 2>/dev/null; source '$func_file'; $func_name \"\$@\"; }"
+  done
 done
+unset func_file func_name
 
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 
@@ -87,8 +96,6 @@ if [[ -d "/home/swany/myenv" ]]; then
   source "/home/swany/myenv/bin/activate"
 fi
 
-# Finalize Powerlevel10k instant prompt. Should stay at the bottom of ~/.zshrc.
-(( ! ${+functions[p10k-instant-prompt-finalize]} )) || p10k-instant-prompt-finalize
 source /home/swany/Repos/powerlevel10k/powerlevel10k.zsh-theme
 
 # Created by `pipx` on 2025-04-23 09:04:21
@@ -96,5 +103,13 @@ export PATH="$PATH:/home/swany/.local/bin"
 export PATH=$PATH:~/.npm-global/bin
 
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# Lazy load NVM - loads on first use
+nvm() {
+  unfunction nvm
+  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+  [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+  nvm "$@"
+}
+
+# Finalize Powerlevel10k instant prompt. Should stay at the bottom of ~/.zshrc.
+(( ! ${+functions[p10k-instant-prompt-finalize]} )) || p10k-instant-prompt-finalize
