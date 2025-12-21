@@ -96,6 +96,13 @@ if [[ -d "/home/swany/myenv" ]]; then
   source "/home/swany/myenv/bin/activate"
 fi
 
+### NVM Configuration ##################################################### 
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+
+nvm use 22 >/dev/null 2>&1
+
 source /home/swany/Repos/powerlevel10k/powerlevel10k.zsh-theme
 
 # Created by `pipx` on 2025-04-23 09:04:21

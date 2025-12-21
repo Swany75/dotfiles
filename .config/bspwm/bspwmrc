@@ -34,6 +34,10 @@ picom --config /home/swany/.config/picom/bspwm-picom.conf &
 # Screen Resolution
 xrandr --output eDP-1 --mode 1600x900
 
+# RClone
+rclone mount porygon:/ /home/Swany/Drive/Porygon --vfs-cache-mode writes &
+rclone mount spyro:/ /home/Swany/Drive/Spyro --vfs-cache-mode writes &
+
 # Cursor
 export XCURSOR_THEME="Breeze"
 export XCURSOR_SIZE=24

@@ -31,3 +31,9 @@ alias tictactoe='python3 /home/swany/Games/TicTacToe/main.py'
 
 # Pentesting Aliases 
 alias rockyou='/usr/share/wordlists/rockyou.txt'
+
+# Zsh 
+alias reloadzsh='source ~/.zshrc'
+
+# Obsidian
+alias obsidian='obsidian -disable-gpu'

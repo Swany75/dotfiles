@@ -5,7 +5,8 @@ function diskStatus() {
     
     # Disk ASCII art placeholder - add your custom art here
     disk_lines=(
-        "${colors[green]}╔╩╩╩╩╩╩═╩╩╗"
+      "\n"
+      "${colors[green]}╔╩╩╩╩╩╩═╩╩╗"
         "║ ╔═╗ ╔═╗ ║"
         "║ ║ ║ ╚═╝ ║"
         "║ ╚═╝ M.2 ║"
