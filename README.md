@@ -87,6 +87,15 @@ This configuration was inspired by and built upon excellent tutorials from:
 - [CONVIERTE TU LINUX EN UN ENTORNO PROFESIONAL DE TRABAJO (2021)](https://www.youtube.com/watch?v=mHLwfI1nHHY)
 - [Como instalar y configuar Polybar](https://www.youtube.com/watch?v=mRY5qisOBhk)
 
+### Themes & fonts
+ - Icons: [Papirus](https://www.gnome-look.org/p/1166289/)
+ - Themes: [Material Black](https://www.gnome-look.org/p/1316887)
+ - Cursor: BreezeX [Light](https://www.gnome-look.org/p/1640746), [Dark](https://www.gnome-look.org/p/1538515), [Black](https://www.gnome-look.org/p/1640747)
+ - Boot Screen: [Plymouth](https://github.com/adi1090x/plymouth-themes?tab=readme-ov-file)
+ - Rofi: [https://github.com/davatorium/rofi-themes.git]
+ - Fonts: NerdFonts [HackNerdFont](https://www.nerdfonts.com/font-downloads)
+ - Grub: [Gorgeous Grub](https://github.com/Jacksaur/Gorgeous-GRUB)
+
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
