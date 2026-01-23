@@ -15,7 +15,10 @@ A comprehensive collection of Linux configuration files optimized for cybersecur
 <img width="1920" height="1080" alt="qtile_desktop" src="https://github.com/user-attachments/assets/0bbdfb1a-f1e8-44da-b945-e7b6d2240f80" />
 
 ### 🍃 Cinnamon
-*Coming Soon - Traditional desktop environment configuration*
+**Traditional Desktop Environment** - A modern, user-friendly desktop with a classic layout
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/a56543c2-b095-4d09-bd16-8c40b1a49130" />
+
 
 ### 🪐 Hyprland
 *Coming Soon - Next-generation desktop environment*
