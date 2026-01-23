@@ -62,10 +62,6 @@ dotfiles
 └── requirements.txt
 ```
 
-## 🎨 Customization
-
-
-
 ## 🙏 Acknowledgments & Resources
 
 ### Primary Learning Sources
@@ -79,13 +75,17 @@ This configuration was inspired by and built upon excellent tutorials from:
 - [archcraft-os/archcraft](https://github.com/archcraft-os/archcraft)
 - [Alpharivs/dotfiles](https://github.com/Alpharivs/dotfiles)
 - [antoniosarosi/dotfiles](https://github.com/antoniosarosi/dotfiles)
-- [davatorium/rofi-themes](https://github.com/davatorium/rofi-themes)
 
 ### Video Tutorials
 - [ASÍ es el ENTORNO de un HACKER](https://www.youtube.com/watch?v=fshLf6u8B-w)
 - [Configurar ENTORNO PROFESIONAL de HACKING y CIBERSEGURIDAD con Bspwm](https://www.youtube.com/watch?v=7o7JqeToFzg)
 - [CONVIERTE TU LINUX EN UN ENTORNO PROFESIONAL DE TRABAJO (2021)](https://www.youtube.com/watch?v=mHLwfI1nHHY)
 - [Como instalar y configuar Polybar](https://www.youtube.com/watch?v=mRY5qisOBhk)
+- [The EASIEST Way to Customize Boot Animation on Arch Linux](https://www.youtube.com/watch?v=84dqux7NDHY&list=PLYgUgN6t3pw0rJSkOIiSJEDIXM4NWA-b1&index=47)
+- [How To Make Cinnamon Beautiful ...](https://www.youtube.com/watch?v=Q_Uoe5H4ORs&list=PLYgUgN6t3pw0rJSkOIiSJEDIXM4NWA-b1&index=39)
+- [Optimize Linux Mint: Must-Do Tweaks After Setup](https://www.youtube.com/watch?v=D9OfpxFgR08&list=PLYgUgN6t3pw0rJSkOIiSJEDIXM4NWA-b1&index=29)
+- [Neofetch - Configuration and Customization!](https://www.youtube.com/watch?v=SC4Onk7HdkI&list=PLYgUgN6t3pw0rJSkOIiSJEDIXM4NWA-b1&index=28)
+- [Rescate de GRUB | Reparación de GRUB](https://www.youtube.com/watch?v=r7meKJsjqfY)
 
 ### Themes & fonts
  - Icons: [Papirus](https://www.gnome-look.org/p/1166289/)
