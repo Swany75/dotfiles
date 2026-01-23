@@ -23,25 +23,40 @@ A comprehensive collection of Linux configuration files optimized for cybersecur
 ## 📁 Repository Structure
 
 ```
-dotfiles/
+dotfiles
 ├── .config/
-│   ├── bspwm/          # Window manager configuration
-│   ├── qtile/          # Python-based window manager setup
-│   ├── polybar/        # Status bar with custom scripts
-│   ├── rofi/           # Application launcher themes
-│   ├── nvim/           # Neovim with NvChad setup
-│   ├── kitty/          # Terminal emulator config
-│   ├── picom/          # Compositor settings
-│   └── neofetch/       # System information display
-├── .functions/         # Organized Zsh function library
+│   ├── bspwm/
+│   ├── fontconfig/
+│   ├── kitty/
+│   ├── neofetch/
+│   ├── nvim/
+│   ├── picom/
+│   ├── polybar/
+│   ├── qtile/
+│   ├── rofi/
+│   └── sxhkd/
+├── etc/
+│   ├── default/
+│   └── lightdm/
+├── .functions/
 ├── Pictures/
-│   └── Wallpapers/     # Desktop wallpapers collection
-├── .zshrc             # Main Zsh configuration
-├── .p10k.zsh          # Powerlevel10k theme settings
-├── .aliases.zsh       # Custom aliases
-├── .gitignore         # Git ignore patterns
-├── requirements.txt   # Python dependencies
-└── root/              # Root user configurations
+│   └── Wallpapers/
+├── root/
+│   └── .p10k.zsh
+├── usr/
+│   └── share/
+│       ├── fonts/
+│       ├── icons/
+│       ├── plymouth/
+│       ├── rofi/
+│       └── themes/
+├── .aliases.zsh
+├── .p10k.zsh
+├── .zshrc
+├── installer.sh
+├── LICENSE
+├── README.md
+└── requirements.txt
 ```
 
 ## 🎨 Customization
