@@ -92,7 +92,7 @@ This configuration was inspired by and built upon excellent tutorials from:
  - Themes: [Material Black](https://www.gnome-look.org/p/1316887)
  - Cursor: BreezeX [Light](https://www.gnome-look.org/p/1640746), [Dark](https://www.gnome-look.org/p/1538515), [Black](https://www.gnome-look.org/p/1640747)
  - Boot Screen: [Plymouth](https://github.com/adi1090x/plymouth-themes?tab=readme-ov-file)
- - Rofi: (OneDark)[https://github.com/davatorium/rofi-themes.git]
+ - Rofi: [OneDark](https://github.com/davatorium/rofi-themes.git)
  - Fonts: NerdFonts [HackNerdFont](https://www.nerdfonts.com/font-downloads)
  - Grub: [Gorgeous Grub](https://github.com/Jacksaur/Gorgeous-GRUB)
 
