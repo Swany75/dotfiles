@@ -1,0 +1,55 @@
+-- ~/.config/nvim/lua/custom/highlights.lua
+-- Tokyo Night - Kitty Edition per NVChad
+-- Versión mejorada: transparencia y colores ajustados a Kitty
+
+local M = {}
+
+M.override = {
+  -- Base
+  Normal = { fg = "#a9b1d6", bg = "#1a1b26" },
+  NormalFloat = { fg = "#a9b1d6", bg = "#1a1b26" },
+  SignColumn = { bg = "#1a1b26" },
+  
+  -- Comentarios y literales
+  Comment = { fg = "#414868", italic = true },
+  Constant = { fg = "#bb9af7" },
+  String = { fg = "#73daca" },
+  Number = { fg = "#e0af68" },
+  Boolean = { fg = "#f7768e" },
+
+  -- Keywords & Functions
+  Keyword = { fg = "#7aa2f7", italic = true },
+  Function = { fg = "#7dcfff" },
+  Identifier = { fg = "#c0caf5" },
+
+  -- Diagnostics
+  Error = { fg = "#f7768e", bold = true },
+  WarningMsg = { fg = "#e0af68" },
+  DiagnosticError = { fg = "#f7768e" },
+  DiagnosticWarn = { fg = "#e0af68" },
+  DiagnosticInfo = { fg = "#7aa2f7" },
+  DiagnosticHint = { fg = "#73daca" },
+
+  -- Cursor & Selección
+  Cursor = { fg = "#1a1b26", bg = "#c0caf5" },
+  CursorLine = { bg = "#28344a" },
+  Visual = { bg = "#28344a" },
+
+  -- Números de línea
+  LineNr = { fg = "#414868" },
+  CursorLineNr = { fg = "#7aa2f7" },
+
+  -- Statusline & Tabline
+  StatusLine = { fg = "#c0caf5", bg = "#414868", bold = true },
+  StatusLineNC = { fg = "#414868", bg = "#1a1b26" },
+  TabLine = { fg = "#414868", bg = "#1a1b26" },
+  TabLineSel = { fg = "#1a1b26", bg = "#7aa2f7", bold = true },
+
+  -- Pestañas flotantes / ventanas temporales
+  Pmenu = { bg = "#1a1b26", fg = "#c0caf5" },
+  PmenuSel = { bg = "#7aa2f7", fg = "#1a1b26", bold = true },
+  PmenuSbar = { bg = "#414868" },
+  PmenuThumb = { bg = "#73daca" },
+}
+
+return M

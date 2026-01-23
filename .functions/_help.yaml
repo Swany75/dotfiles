@@ -1,0 +1,130 @@
+_core.zsh:
+  info: "Internal utility functions used to enhance other modules."
+  functions:
+    _ctrl_c:
+      description: "Handles Ctrl+C and exits cleanly"
+    _show_message:
+      description: "Displays colored status/info messages with symbols"
+    _calcSpaces:
+      description: "Calculates spaces for text alignment"
+
+_help.zsh:
+  info: "Help system for viewing function documentation"
+  functions:
+    help:
+      description: "Display help for all modules and functions"
+    _show_module:
+      description: "Internal function to display module information"
+
+ascii_art.zsh:
+  functions:
+    ascii_demon:
+      description: "Prints a red ASCII demon"
+    asciiart:
+      description: "Converts images to ASCII banners"
+
+hacking.zsh:
+  info: "Some of these functions come from Hack4u courses (Tysm S4vitar)"
+  functions:
+    extractDomains:
+      description: "Extracts domains from URLs in a file"
+    whoisall:
+      description: "WHOIS lookup for domains"
+    hashidall:
+      description: "Detects hash types from a file"
+    mkt:
+      description: "Creates standard project directories (nmap, content, exploits, scripts)"
+    rmk:
+      description: "Securely removes a file using scrub and shred"
+    extractPorts:
+      description: "Extracts open ports and IP info from an Nmap scan"
+    fzf-lovely:
+      description: "Enhanced fzf preview for files (binary detection, syntax highlighting)"
+    scanPorts:
+      description: "TCP port scanner"
+    scanNet:
+      description: "Ping sweep on subnet"
+
+net_utils.zsh:
+  functions:
+    ifaces:
+      description: "Show network interfaces info (IP, MAC, public IP)"
+    chintnm:
+      description: "Rename network interface"
+    connections:
+      description: "Show active network connections"
+    downdetector:
+      description: "Check if a service is reachable"
+    eping:
+      description: "Enhanced ping with OS detection and colorized output"
+
+polybar.zsh:
+  info: "These functions only work on the BSPWM + Polybar Desktop Environment"
+  functions:
+    settarget:
+      description: "Save target IP and name"
+    cleartarget:
+      description: "Clear saved target info"
+
+notes.zsh:
+  functions:
+    remember:
+      description: "Save a note with a timestamp"
+    notes:
+      description: "View all saved notes"
+    clear_notes:
+      description: "Clear all notes with confirmation"
+
+performance.zsh:
+  info: "System performance monitoring functions"
+  functions:
+    batteryStatus:
+      description: "Show ASCII battery status with percentage and charging state"
+    cpuStatus:
+      description: "Show CPU usage and temperature"
+    ramStatus:
+      description: "Show RAM usage statistics"
+    gpuStatus:
+      description: "Show GPU usage and temperature"
+    diskStatus:
+      description: "Show disk usage statistics with color-coded percentages"
+    status:
+      description: "Show comprehensive system status (CPU, RAM, GPU, Battery, Disk)"
+
+sys_utils.zsh:
+  functions:
+    mkcd:
+      description: "Make directory and cd into it"
+    man:
+      description: "Man pages with syntax highlighting via bat"
+    extract:
+      description: "Extract various archive types"
+    compress:
+      description: "Compress files or folders (supports zip, tar, rar, 7z, gzip)"
+    backup:
+      description: "Backup files or directories with timestamp"
+    cput:
+      description: "Copy contents of a file to clipboard"
+    rm:
+      description: "Move files to trash instead of permanent deletion"
+    remove:
+      description: "Permanently delete files with confirmation"
+    trash:
+      description: "Show contents of trash"
+    clear_trash:
+      description: "Empty trash with confirmation"
+    set_wallpaper:
+      description: "Set wallpaper from ~/Pictures/Wallpapers"
+
+update.zsh:
+  info: "These functions only work if the programs are installed"
+  functions:
+    plexupdate:
+      description: "Download and update Plex Media Server"
+    discordupdate:
+      description: "Download and update Discord"
+
+zsh_plugins.zsh:
+  functions:
+    reload_autosuggestions:
+      description: "Reload zsh-autosuggestions plugin"

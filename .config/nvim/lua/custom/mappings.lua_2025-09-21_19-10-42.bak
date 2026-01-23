@@ -1,0 +1,75 @@
+---@type MappingsTable
+local M = {}
+
+-- ========================
+--  GENERAL
+-- ========================
+M.general = {
+  i = {
+    -- Sortida ràpida d'Insert amb jk/kj
+    ["jk"] = { "<ESC>", "Exit insert mode" },
+    ["kj"] = { "<ESC>", "Exit insert mode" },
+  },
+
+  n = {
+    -- Navegació entre splits
+    ["<C-h>"] = { "<C-w>h", "Move to left split" },
+    ["<C-j>"] = { "<C-w>j", "Move to bottom split" },
+    ["<C-k>"] = { "<C-w>k", "Move to top split" },
+    ["<C-l>"] = { "<C-w>l", "Move to right split" },
+
+    -- Ajust mida splits
+    ["<A-h>"] = { ":vertical resize -2<CR>", "Resize split left" },
+    ["<A-l>"] = { ":vertical resize +2<CR>", "Resize split right" },
+    ["<A-j>"] = { ":resize +2<CR>", "Resize split down" },
+    ["<A-k>"] = { ":resize -2<CR>", "Resize split up" },
+
+    -- Buffers
+    ["<Tab>"]    = { ":bnext<CR>", "Next buffer" },
+    ["<S-Tab>"]  = { ":bprevious<CR>", "Prev buffer" },
+    ["<C-b>"]    = { ":bdelete<CR>", "Close buffer" },
+
+    -- Guardar i sortir
+    ["<C-s>"]    = { ":w<CR>", "Save file" },
+    ["<C-q>"]    = { ":wq<CR>", "Save and quit" },
+  },
+
+  v = {
+    -- Moure línies en mode visual
+    ["J"] = { ":m '>+1<CR>gv=gv", "Move line down" },
+    ["K"] = { ":m '<-2<CR>gv=gv", "Move line up" },
+
+    -- Indentació
+    ["<S-<>"] = { "<gv", "Indent left" },
+    ["<S->>"] = { ">gv", "Indent right" },
+  },
+}
+
+-- ========================
+--  PLUGINS
+-- ========================
+M.plugins = {
+  n = {
+    -- Telescope
+    ["<leader>f"] = { "<cmd>Telescope find_files<CR>", "Find files" },
+
+    -- Comentaris (Comment.nvim)
+    ["<leader>/"] = {
+      function()
+        require("Comment.api").toggle.linewise.current()
+      end,
+      "Toggle comment",
+    },
+
+    -- NERDTree
+    ["<leader>n"] = { "<cmd>NERDTreeToggle<CR>", "Toggle NERDTree" },
+
+    -- Prettier
+    ["<leader>p"] = { "<cmd>Prettier<CR>", "Format with Prettier" },
+
+    -- Documentació (LSP hover)
+    ["K"] = { "<cmd>lua vim.lsp.buf.hover()<CR>", "Show documentation" },
+  }
+}
+
+return M

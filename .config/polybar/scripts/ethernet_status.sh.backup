@@ -1,0 +1,23 @@
+#!/bin/sh
+
+# Noms de les interfícies
+ethernet_interface="enp4s0"
+wifi_interface="wlo1"
+
+# Obtenim l'adreça IP de la interfície Ethernet
+ethernet_ip=$(ip addr show $ethernet_interface | grep "inet " | awk '{print $2}' | cut -d/ -f1)
+
+# Si no tenim una adreça IP per Ethernet, comprovem la interfície WiFi
+if [ -z "$ethernet_ip" ]; then
+    # Obtenim l'adreça IP de la interfície WiFi
+    wifi_ip=$(ip addr show $wifi_interface | grep "inet " | awk '{print $2}' | cut -d/ -f1)
+    # Mostrem l'IP de la WiFi
+    if [ -n "$wifi_ip" ]; then
+        echo "%{F#2495e7}  %{F#ffffff}$wifi_ip%{u-}"
+    else
+        echo "%{F#2495e7} %{F#ffffff}No IP %{u-}"
+    fi
+else
+    # Mostrem l'IP de la interfície Ethernet
+    echo "%{F#2495e7}󰈀 %{F#ffffff}$ethernet_ip%{u-}"
+fi

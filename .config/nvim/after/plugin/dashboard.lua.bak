@@ -1,0 +1,32 @@
+local alpha = require("alpha")
+local dashboard = require("alpha.themes.dashboard")
+local ascii = require("ascii")
+
+-- Header con arte y color
+dashboard.section.header.val = ascii.art.sharp
+dashboard.section.header.opts.hl = "DashboardHeader"
+
+-- Función segura para obtener arte
+local function get_art(name)
+    if ascii.art[name] and type(ascii.art[name]) == "table" then
+        return ascii.art[name]
+    else
+        return { "Welcome to NeoVim" }
+    end
+end
+
+-- Elegir arte que quieras
+dashboard.section.header.val = get_art("sharp")
+
+dashboard.section.buttons.val = {
+  dashboard.button("ff", "  Find File", ":Telescope find_files<CR>"),
+  dashboard.button("fo", "  Recent Files", ":Telescope oldfiles<CR>"),
+  dashboard.button("fw", "  Find Word", ":Telescope live_grep<CR>"),
+  dashboard.button("bm", "  Bookmarks", ":Telescope marks<CR>"),
+  dashboard.button("th", "  Themes", ":Telescope themes<CR>"), -- si usas telescope-themes
+  dashboard.button("es", "  Settings", ":e $MYVIMRC<CR>"),
+  dashboard.button("q",  "  Quit", ":qa<CR>"),
+}
+
+alpha.setup(dashboard.opts)
+
