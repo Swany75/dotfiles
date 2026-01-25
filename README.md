@@ -12,7 +12,7 @@ A comprehensive collection of Linux configuration files optimized for cybersecur
 ### 🐍 Qtile 
 **Python-based Tiling Window Manager** - A modular, Python-powered tiling setup
 
-<img width="1920" height="1080" alt="qtile_desktop" src="https://github.com/user-attachments/assets/0bbdfb1a-f1e8-44da-b945-e7b6d2240f80" />
+<img width="1920" height="1080" alt="2026-01-25_11-23-17" src="https://github.com/user-attachments/assets/c0867261-cf19-4b46-9536-05ea5a0f15ac" />
 
 ### 🍃 Cinnamon
 **Traditional Desktop Environment** - A modern, user-friendly desktop with a classic layout
