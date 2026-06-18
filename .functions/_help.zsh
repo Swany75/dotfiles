@@ -1,10 +1,10 @@
 #!/bin/zsh
 
-trap _ctrl_c INT
-
 # Help function compatible with Python yq (jq syntax)
 function help() {
+    emulate -L zsh
     local HELP_YAML="$HOME/.functions/_help.yaml"
+    setopt localtraps noxtrace
     
     # Check dependencies
     if ! command -v yq &> /dev/null; then
@@ -36,6 +36,8 @@ function help() {
         _show_message "No modules found in help file" "error"
         return 1
     fi
+
+    trap '_show_message "Exiting help..." "error"; return 130' INT
     
     while true; do
         clear
@@ -54,18 +56,45 @@ function help() {
         done
         
         echo -ne "\n${colors[green]}➤${colors[reset]} ${colors[cyan]}Select module number (q to quit):${colors[reset]} "
-        read choice
+        if ! builtin read -r choice; then
+            continue
+        fi
         
-        [[ "$choice" =~ ^[Qq]$ ]] && return 0
+        if [[ "$choice" =~ ^[Qq]$ ]]; then
+            return 0
+        fi
         
         if [[ "$choice" =~ ^[0-9]+$ ]] && (( choice >= 1 && choice <= ${#my_modules[@]} )); then
-            _show_module "${my_modules[$choice]}" "$HELP_YAML"
+            local submenu_choice="$choice"
+
+            while true; do
+                _show_module "${my_modules[$submenu_choice]}" "$HELP_YAML"
+                echo -ne "\n${colors[green]}➤${colors[reset]} ${colors[cyan]}ENTER: main menu | number: switch module | q: quit${colors[reset]} "
+
+                local nav_choice
+                if ! builtin read -r nav_choice; then
+                    break
+                fi
+
+                if [[ -z "$nav_choice" ]]; then
+                    break
+                elif [[ "$nav_choice" =~ ^[Qq]$ ]]; then
+                    return 0
+                elif [[ "$nav_choice" =~ ^[0-9]+$ ]]; then
+                    if (( nav_choice >= 1 && nav_choice <= ${#my_modules[@]} )); then
+                        submenu_choice="$nav_choice"
+                        continue
+                    fi
+                    _show_message "Invalid module range. Returning to main menu..." "error"
+                    break
+                else
+                    _show_message "Invalid input. Returning to main menu..." "error"
+                    break
+                fi
+            done
         else
             _show_message "Invalid selection." "error"
         fi
-        
-        _show_message "Press ENTER to return to the menu..." "plus"
-        read
     done
 }
 

@@ -1,1 +1,1 @@
-vim.api.nvim_set_hl(0, "DashboardHeader", { fg = "#7AA2F7", bold = true })
+vim.api.nvim_set_hl(0, "DashboardHeader", { fg = "#A6E3A0", bold = true })

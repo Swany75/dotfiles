@@ -6,12 +6,12 @@ local ascii = require("ascii")
 
 -- ===== Header =====
 dashboard.section.header.val = ascii.art.sharp or { "Welcome to NeoVim" }
-vim.api.nvim_set_hl(0, "DashboardHeader", { fg = "#00afff", bold = true })
+vim.api.nvim_set_hl(0, "DashboardHeader", { fg = "#00ff55", bold = true })
 dashboard.section.header.opts.hl = "DashboardHeader"
 
 -- ===== Crear highlights =====
-vim.api.nvim_set_hl(0, "DashboardButton", { fg = "#deffa0" })        -- blau per text + icona
-vim.api.nvim_set_hl(0, "DashboardShortcut", { fg = "#E6DB74", bold = true }) -- groc + negreta per shortcut
+vim.api.nvim_set_hl(0, "DashboardButton", { fg = "#89B4FA" })        -- cyan per text + icona
+vim.api.nvim_set_hl(0, "DashboardShortcut", { fg = "#F9E2AF", bold = true }) -- groc + negreta per shortcut
 
 -- ===== Funció per crear botons =====
 local function button(shortcut, icon, desc, cmd)
